@@ -1,4 +1,4 @@
-name: "jboss-eap-6/eap"
+name: "jboss-eap-6/eap64"
 version: "6.4.15"
 release: "dev"
 from: "jboss/openjdk18-rhel7:1.0"
