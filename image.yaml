@@ -51,4 +51,4 @@ sources:
     - url: jboss-eap-6.4.15-patch.zip
       md5: f43d4074a6c012d7466ff72415d9e72c
 dogen:
-    version: 2.0.0rc15
+    version: 2.0.0rc16
