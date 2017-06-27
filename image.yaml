@@ -52,4 +52,8 @@ sources:
     - artifact: jboss-eap-6.4.16-patch.zip
       sha256: e4432931676101254f242ec5e260940adb0ab1f7aebe903f4c120d360e55f82c
 dogen:
-    version: 2.0.0
+    version: 2.1.0
+    plugins:
+        dist_git:
+            repo: jboss-eap-6-docker
+            branch: jb-eap64
