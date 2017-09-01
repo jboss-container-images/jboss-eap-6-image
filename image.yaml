@@ -1,6 +1,6 @@
 name: "jboss-eap-6/eap64"
 description: "Red Hat JBoss Enterprise Application Platform 6.4 container image"
-version: "6.4.16"
+version: "6.4.17"
 from: "jboss/openjdk18-rhel7:1.0"
 user: 185
 labels:
@@ -20,9 +20,9 @@ envs:
     - name: "JBOSS_PRODUCT"
       value: "eap"
     - name: "JBOSS_EAP_VERSION"
-      value: "6.4.16.GA"
+      value: "6.4.17.GA"
     - name: "PRODUCT_VERSION"
-      value: "6.4.16.GA"
+      value: "6.4.17.GA"
     - name: "JBOSS_HOME"
       value: "/opt/eap"
     - name: "DEBUG"
@@ -48,11 +48,10 @@ sources:
       hint: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=37393&product=appplatform&version=6.4&downloadType=distributions"
     - artifact: jboss-eap-6.4.9-patch.zip
       md5: fdc6cd3bf51ba2714b98de2923266537
-      hint: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=45371&product=appplatform&version=6.4&downloadType=patches"
-    - artifact: jboss-eap-6.4.16-patch.zip
-      sha256: e4432931676101254f242ec5e260940adb0ab1f7aebe903f4c120d360e55f82c
+    - artifact: jboss-eap-6.4.17-patch.zip
+      sha256: ed7e17c2bc57c9ca26b2d590241d34c6e83df2c0ddf2a8057af772bb2f161759
 dogen:
-    version: 2.1.0
+    version: 2.4.1
     plugins:
         dist_git:
             repo: jboss-eap-6-docker

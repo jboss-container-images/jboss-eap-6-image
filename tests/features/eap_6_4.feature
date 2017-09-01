@@ -1,3 +1,4 @@
+@jboss-eap-6/eap64
 Feature: Standalone 6.4 EAP tests
 
   Scenario: Check org.jboss.deployments-dir label existence
