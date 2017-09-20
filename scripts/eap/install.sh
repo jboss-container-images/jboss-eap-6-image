@@ -66,9 +66,3 @@ aggregate_patched_modules
 remove_scrapped_jars
 update_permissions
 
-# Enhance standalone.sh to make remote JAVA debugging possible by specifying
-# DEBUG=true environment variable
-sed -i 's|DEBUG_MODE=false|DEBUG_MODE="${DEBUG:-false}"|' $JBOSS_HOME/bin/standalone.sh
-sed -i 's|DEBUG_PORT="8787"|DEBUG_PORT="${DEBUG_PORT:-8787}"|' $JBOSS_HOME/bin/standalone.sh
-#CLOUD-437
-sed -i "s|-XX:MaxPermSize=256m||" $JBOSS_HOME/bin/standalone.conf
