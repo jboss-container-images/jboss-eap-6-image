@@ -18,18 +18,3 @@ Feature: Standalone common EAP tests
     Given image is built
      Then image should contain 5 layers
 
-  # https://issues.jboss.org/browse/CLOUD-243
-  Scenario: Check debug port is available
-    When container is started with env
-     | variable | value |
-     | DEBUG    | true  |
-    Then check that port 8787 is open
-
-  # https://issues.jboss.org/browse/CLOUD-243
-  Scenario: Check custom debug port is available
-    When container is started with env
-     | variable   | value |
-     | DEBUG      | true  |
-     | DEBUG_PORT | 8798  |
-    Then check that port 8798 is open
-
