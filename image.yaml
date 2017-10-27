@@ -2,15 +2,15 @@ schema_version: 1
 
 name: "jboss-eap-6/eap64"
 description: "Red Hat JBoss Enterprise Application Platform 6.4 container image"
-version: "6.4.18"
+version: "6.4.17"
 from: "jboss/openjdk18-rhel7:1.0"
 labels:
     - name: "org.jboss.product"
       value: "eap"
     - name: "org.jboss.product.version"
-      value: "6.4.18.GA"
+      value: "6.4.17.GA"
     - name: "org.jboss.product.eap.version"
-      value: "6.4.18.GA"
+      value: "6.4.17.GA"
     - name: "org.jboss.deployments-dir"
       value: "/opt/eap/standalone/deployments"
     - name: "com.redhat.deployments-dir"
@@ -27,9 +27,9 @@ envs:
     - name: "JBOSS_PRODUCT"
       value: "eap"
     - name: "JBOSS_EAP_VERSION"
-      value: "6.4.18.GA"
+      value: "6.4.17.GA"
     - name: "PRODUCT_VERSION"
-      value: "6.4.18.GA"
+      value: "6.4.17.GA"
     - name: "JBOSS_HOME"
       value: "/opt/eap"
     - name: "DEBUG"
@@ -51,8 +51,8 @@ artifacts:
       md5: 9a5d37631919a111ddf42ceda1a9f0b5
     - path: jboss-eap-6.4.9-patch.zip
       md5: fdc6cd3bf51ba2714b98de2923266537
-    - path: jboss-eap-6.4.18-patch.zip
-      sha256: c85abc2b835d4e13d014abe842ab545c5b35ad8e9064abd886391c80271f5c65
+    - path: jboss-eap-6.4.17-patch.zip
+      sha256: ed7e17c2bc57c9ca26b2d590241d34c6e83df2c0ddf2a8057af772bb2f161759
 run:
       user: 185
       cmd:
