@@ -43,6 +43,8 @@ ports:
     - value: 8787
       expose: false
 modules:
+      repositories:
+          - path: modules
       install:
           - name: eap
 artifacts:
