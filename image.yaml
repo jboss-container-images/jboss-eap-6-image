@@ -64,4 +64,4 @@ run:
 osbs:
       repository:
             name: jboss-eap-6-docker
-            branch: jb-eap64
+            branch: jb-eap-6.4-rhel-7
