@@ -5,6 +5,8 @@ description: "Red Hat JBoss Enterprise Application Platform 6.4 container image"
 version: "6.4.19"
 from: "jboss/openjdk18-rhel7:1.1"
 labels:
+    - name: "com.redhat.component"
+      value: "jboss-eap-6-eap64-container"
     - name: "org.jboss.product"
       value: "eap"
     - name: "org.jboss.product.version"
@@ -63,5 +65,5 @@ run:
           - "0.0.0.0"
 osbs:
       repository:
-            name: jboss-eap-6-docker
-            branch: jb-eap64
+            name: containers/jboss-eap-6
+            branch: jb-eap-6.4-rhel-7
