@@ -57,6 +57,8 @@ artifacts:
       md5: fdc6cd3bf51ba2714b98de2923266537
     - path: jboss-eap-6.4.19-patch.zip
       sha256: 02d46374ef3fa226655a29216fa9d95b379c1037a4dc3c5d1b23869495ff6ebc
+    - path: BZ1550337.zip
+      md5: 5319e59dcd601ae2f3eb4e0bab505db2
 run:
       user: 185
       cmd:
