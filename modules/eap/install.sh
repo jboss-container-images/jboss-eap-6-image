@@ -11,6 +11,7 @@ mv jboss-eap-$EAP_VERSION $JBOSS_HOME
 
 $JBOSS_HOME/bin/jboss-cli.sh --command="patch apply $SOURCES_DIR/jboss-eap-6.4.9-patch.zip"
 $JBOSS_HOME/bin/jboss-cli.sh --command="patch apply $SOURCES_DIR/jboss-eap-6.4.19-patch.zip"
+$JBOSS_HOME/bin/jboss-cli.sh --command="patch apply $SOURCES_DIR/BZ1550337.zip"
 
 # https://issues.jboss.org/browse/CLOUD-1260
 # https://issues.jboss.org/browse/CLOUD-1431
