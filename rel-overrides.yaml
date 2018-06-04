@@ -1,0 +1,6 @@
+schema_version: 1
+osbs:
+      repository:
+            name: containers/jboss-eap-6
+            branch: jb-eap-6.4-rhel-7
+
