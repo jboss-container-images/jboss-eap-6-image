@@ -1,0 +1,22 @@
+schema_version: 1
+
+name: "eap-6.4.19"
+description: "Red Hat JBoss Enterprise Application Platform 6.4.19 patch upgrade"
+labels:
+    - name: "org.jboss.product.version"
+      value: "6.4.19.GA"
+    - name: "org.jboss.product.eap.version"
+      value: "6.4.19.GA"
+envs:
+    - name: "JBOSS_EAP_VERSION"
+      value: "6.4.19.GA"
+    - name: "PRODUCT_VERSION"
+      value: "6.4.19.GA"
+artifacts:
+    - path: jboss-eap-6.4.19-patch.zip
+      sha256: 02d46374ef3fa226655a29216fa9d95b379c1037a4dc3c5d1b23869495ff6ebc
+modules:
+      install:
+          - name: eap-6.4.9
+execute:
+    - script: install.sh
