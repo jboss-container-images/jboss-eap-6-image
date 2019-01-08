@@ -7,10 +7,10 @@ from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
       value: "jboss-eap-6-eap64-container"
+
 packages:
-      repositories:
-          - name: base
-            id: rhel-7-server-rpms
+      content_sets_file: content_sets.yml
+
 modules:
       repositories:
           - name: cct_module
@@ -23,6 +23,8 @@ modules:
             version: "8"
           - name: eap-6.4-latest
 osbs:
+      configuration:
+            container_file: container.yaml
       repository:
             name: containers/jboss-eap-6
             branch: jb-eap-6.4-rhel-7

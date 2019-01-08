@@ -39,8 +39,8 @@ function aggregate_patched_modules {
     sleep 5
   done
 
-  timeout 30 $JBOSS_HOME/bin/jboss-cli.sh --connect --command="/core-service=patching:ageout-history"
-  timeout 30 $JBOSS_HOME/bin/jboss-cli.sh --connect --command="shutdown"
+  timeout 180 $JBOSS_HOME/bin/jboss-cli.sh --connect --command="/core-service=patching:ageout-history"
+  timeout 180 $JBOSS_HOME/bin/jboss-cli.sh --connect --command="shutdown"
 
   # give it a moment to settle
   for i in $(seq 1 10); do
