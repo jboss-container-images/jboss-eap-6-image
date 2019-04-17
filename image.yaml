@@ -2,7 +2,7 @@ schema_version: 1
 
 name: "jboss-eap-6/eap64"
 description: "Red Hat JBoss Enterprise Application Platform 6.4 container image"
-version: "6.4.21"
+version: "6.4.22"
 from: "rhel7:7-released"
 labels:
     - name: "com.redhat.component"
