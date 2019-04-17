@@ -13,8 +13,9 @@ envs:
     - name: "PRODUCT_VERSION"
       value: "6.4.19.GA"
 artifacts:
-    - path: jboss-eap-6.4.19-patch.zip
-      sha256: 02d46374ef3fa226655a29216fa9d95b379c1037a4dc3c5d1b23869495ff6ebc
+    - name: jboss-eap-6.4.19-patch.zip
+      target: jboss-eap-6.4.19-patch.zip
+      md5: 42257f07779e746d1806d43507ce2934
 modules:
       install:
           - name: eap-6.4.9
