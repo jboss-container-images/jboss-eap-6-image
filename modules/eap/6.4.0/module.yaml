@@ -41,8 +41,8 @@ ports:
     - value: 8787
       expose: false
 artifacts:
-    - path: jboss-eap-6.4.0.zip
-      description: "Artifact is available on Customer Portal: https://access.redhat.com/jbossnetwork/restricted/softwareDetail.html?softwareId=37393&product=appplatform&version=6.4&downloadType=distributions"
+    - name: jboss-eap-6.4.0.zip
+      target: jboss-eap-6.4.0.zip
       md5: 9a5d37631919a111ddf42ceda1a9f0b5
 run:
       user: 185
