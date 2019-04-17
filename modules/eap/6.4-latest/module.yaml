@@ -4,5 +4,5 @@ name: "eap-6.4-latest"
 description: "Red Hat JBoss Enterprise Application Platform 6.4 latest version install module"
 modules:
       install:
-          - name: eap-6.4.21
+          - name: eap-6.4.22
           - name: eap-install-cleanup
