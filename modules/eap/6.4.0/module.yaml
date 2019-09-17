@@ -1,5 +1,5 @@
 schema_version: 1
-
+version: "1.0"
 name: "eap-6.4.0"
 description: "Red Hat JBoss Enterprise Application Platform 6.4.0 install"
 labels:
