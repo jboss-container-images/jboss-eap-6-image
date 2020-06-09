@@ -1,0 +1,23 @@
+schema_version: 1
+version: "1.0"
+name: "eap-6.4.23"
+description: "Red Hat JBoss Enterprise Application Platform 6.4.23 patch upgrade"
+labels:
+    - name: "org.jboss.product.version"
+      value: "6.4.23.GA"
+    - name: "org.jboss.product.eap.version"
+      value: "6.4.23.GA"
+envs:
+    - name: "JBOSS_EAP_VERSION"
+      value: "6.4.23.GA"
+    - name: "PRODUCT_VERSION"
+      value: "6.4.23.GA"
+artifacts:
+    - name: jboss-eap-6.4.23-patch.zip
+      target: jboss-eap-6.4.23-patch.zip
+      md5: 66474ea83de005bd019aa9b8f03b21ce
+modules:
+      install:
+          - name: eap-6.4.19
+execute:
+    - script: install.sh
