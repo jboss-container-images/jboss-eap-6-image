@@ -19,6 +19,9 @@ artifacts:
     - name: BZ-1861193.zip
       target: BZ-1861193.zip
       md5: 62880cd655f070c5cebdde7b6dc24b4f
+    - name: BZ1875177.zip
+      target: BZ1875177.zip
+      md5: 685f7b00c482510f5f73519f8006d244
 modules:
       install:
           - name: eap-6.4.19
