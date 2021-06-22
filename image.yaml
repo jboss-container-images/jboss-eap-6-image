@@ -3,7 +3,7 @@ schema_version: 1
 name: "jboss-eap-6/eap64"
 description: "Red Hat JBoss Enterprise Application Platform 6.4 container image"
 version: "6.4.23"
-from: "rhel7:7-released"
+from: "registry.redhat.io/rhel7/rhel:latest"
 labels:
     - name: "com.redhat.component"
       value: "jboss-eap-6-eap64-container"
